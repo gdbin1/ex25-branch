@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면테스트</title>
+    <style>
+        div {
+            border: 1px solid orange;
+            background-color: yellow;
+        }
+
+        img {
+            width: 320px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>get방식</h3>
+    <div>
+        <form action="./article-get" method="get">
+            <input type="text" name="title">
+            <input type="text" name="content">
+            <input type="submit">
+        </form>
+        <hr>
+        <img src="./img/getRequest.png" alt="테스트화면">
+        <img src="./img/getResponse.png" alt="테스트결과">
+    </div>
+
+
+    <h3>post방식</h3>
+    <div>
+        <form action="./article-post" method="post">
+            <input type="text" name="title">
+            <input type="text" name="content">
+            <input type="submit">
+        </form>
+        <hr>
+        <img src="./img/postRequest.png" alt="테스트화면">
+        <img src="./img/postResponse.png" alt="테스트결과">
+        <img src="./img/post포스트맨Formdata.png" alt="From테스트">
+        <img src="./img/post포스트맨WwwForm.png" alt="From테스트">
+    </div>
+
+    <h3>postman방식</h3>
+    <div>
+        <p>포스트맨으로 테스트하세요
+            "/article-postman"
+        </p>
+        <hr>
+        <img src="./img/post포스트맨.png" alt="테스트">
+    </div>
+
+    <h3>post_Auto방식</h3>
+    <div>
+        <form action="./article-auto" method="post">
+            <input type="text" name="title">
+            <input type="text" name="content">
+            <input type="submit">
+        </form>
+        <hr>
+        <img src="./img/postAutoFormdata.png" alt="Auto테스트">
+        <img src="./img/postAutoWwwForm.png" alt="Auto테스트">
+        <img src="./img/postAuto폼Request.png" alt="Auto테스트화면">
+        <img src="./img/postAuto폼Response.png" alt="Auto테스트결과">
+    </div>
+
+</body>
+
+</html>
