@@ -14,7 +14,7 @@
     SELECT * FROM student WHERE id = #{id}
   </select>
  
- 
+
  <insert id="insert" parameterType="Student" useGeneratedKeys="true" keyProperty="id">
  INSERT INTO student(NAME, email, age)
  VALUES (#{name}, #{email}, #{age})
