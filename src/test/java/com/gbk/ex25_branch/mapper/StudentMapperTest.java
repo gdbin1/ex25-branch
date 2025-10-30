@@ -13,7 +13,7 @@ import com.gbk.ex25_branch.domain.StudentTest;
 public interface StudentMapperTest {
 	
 	
-	@Select("SELECT * FROM student ORDER BY id DESC")
+	@Select("SELECT * FROM student ORDER BY #{id} DESC")
 	List<StudentTest> findAll();
 
 	@Select("SELECT * FROM student WHERE id = #{id}")
