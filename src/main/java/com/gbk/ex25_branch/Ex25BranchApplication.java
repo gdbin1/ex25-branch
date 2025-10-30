@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.gbk.ex25_branch", "com.gbk.mybatis"})
-@MapperScan(basePackages = "com.gbk.mybatis.mapper")
+@MapperScan(basePackages = {"com.gbk.mybatis.mapper", "com.gbk.ex25_branch.mapper"})
 public class Ex25BranchApplication {
 
 	public static void main(String[] args) { 
